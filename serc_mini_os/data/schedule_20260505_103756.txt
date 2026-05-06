@@ -1,0 +1,27 @@
+=== Scheduling Algorithm Comparison ===
+Non-mutating preview: processes remain READY so algorithms can be compared fairly.
+Round Robin quantum: 2
+
+Algorithm              Tasks  Average Waiting Time  Average Turnaround Time  CPU Utilization  Total Time  Segments
+------------------------------------------------------------------------------------------------------------------
+FCFS                   12     27.25                 32.08                    100.00           58          12      
+SJF                    12     20.92                 25.75                    100.00           58          12      
+Priority Scheduling    12     28.58                 33.42                    100.00           58          12      
+Round Robin            12     38.50                 43.33                    100.00           58          32      
+
+Best waiting time: SJF (20.92)
+Best turnaround time: SJF (25.75)
+
+Gantt Preview for SJF:
+PID 9 : 0 -> 2
+PID 3 : 2 -> 5
+PID 11 : 5 -> 8
+PID 1 : 8 -> 12
+PID 8 : 12 -> 16
+PID 4 : 16 -> 21
+PID 6 : 21 -> 26
+PID 12 : 26 -> 31
+PID 2 : 31 -> 37
+PID 10 : 37 -> 43
+PID 5 : 43 -> 50
+PID 7 : 50 -> 58

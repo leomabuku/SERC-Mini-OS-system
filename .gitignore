@@ -1,0 +1,13 @@
+.idea/
+old/
+/serc_mini_os/build/
+/serc_mini_os/logs/
+/serc_mini_os/*.exe
+/serc_mini_os/*.rar
+*.exe
+*.rar
+*.o
+*.obj
+*.out
+serc_console
+serc_gui

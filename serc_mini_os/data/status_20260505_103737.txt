@@ -1,0 +1,67 @@
+=== SERC MINI-OS STATUS REPORT ===
+
+PID  NAME                 TYPE         BT RT PR MEM START MODE   STATE        WT  TAT CT  ALLOC/MAX (C,V,S)
+-----------------------------------------------------------------------------------------------------------------------
+1    Ambulance Dispatch   AMBULANCE    4  4  1  70  0     CONTIG READY        0   0   0   (1,1,1)/(2,1,2)
+2    Fire Alert           FIRE         6  6  2  90  70    CONTIG READY        0   0   0   (1,0,1)/(1,2,1)
+3    Police Patrol        POLICE       3  3  3  60  160   CONTIG READY        0   0   0   (0,0,0)/(2,2,1)
+4    Traffic Control      POLICE       5  5  2  85  220   CONTIG READY        0   0   0   (0,0,0)/(1,1,3)
+5    Rescue Coordination  AMBULANCE    7  7  1  95  305   CONTIG READY        0   0   0   (0,1,1)/(2,1,1)
+6    Fire Station Relay   FIRE         5  5  2  70  400   CONTIG READY        0   0   0   (0,0,0)/(1,1,2)
+7    Checkpoint Monitoring POLICE       8  8  3  90  470   CONTIG READY        0   0   0   (0,0,0)/(3,1,1)
+8    Medical Supply Run   AMBULANCE    4  4  2  55  560   CONTIG READY        0   0   0   (0,0,0)/(1,2,2)
+9    Incident Logging     POLICE       2  2  4  50  615   CONTIG READY        0   0   0   (0,0,0)/(2,1,2)
+10   Hazmat Response      FIRE         6  6  1  100 665   CONTIG READY        0   0   0   (1,1,0)/(1,1,1)
+11   Emergency Hotline    AMBULANCE    3  3  2  60  765   CONTIG READY        0   0   0   (0,0,0)/(2,2,2)
+12   Crowd Management     POLICE       5  5  3  75  825   CONTIG READY        0   0   0   (0,0,0)/(1,1,2)
+
+Memory Used: 900 / 1024 | Free: 124 | External Fragments: 1 | Paging Internal Fragmentation: 0
+Contiguous Segments
+START  SIZE  STATUS  PID
+-------------------------
+0      70    USED    1  
+70     90    USED    2  
+160    60    USED    3  
+220    85    USED    4  
+305    95    USED    5  
+400    70    USED    6  
+470    90    USED    7  
+560    55    USED    8  
+615    50    USED    9  
+665    100   USED    10 
+765    60    USED    11 
+825    75    USED    12 
+900    124   FREE    -1 
+
+Paging Frames
+FRAME  START  STATUS  PID  PAGE
+--------------------------------
+0      0      USED    1    -1  
+1      64     USED    2    -1  
+2      128    USED    3    -1  
+3      192    USED    4    -1  
+4      256    USED    5    -1  
+5      320    USED    5    -1  
+6      384    USED    6    -1  
+7      448    USED    7    -1  
+8      512    USED    8    -1  
+9      576    USED    9    -1  
+10     640    USED    10   -1  
+11     704    USED    11   -1  
+12     768    USED    12   -1  
+13     832    USED    12   -1  
+14     896    USED    12   -1  
+15     960    FREE    -1   -1  
+
+Resources
+Communication Channels: total=8 available=5
+Vehicles: total=6 available=3
+Staff Units: total=10 available=7
+
+IPC Message Queue (4 message(s))
+FROM  TO    TIME                 MESSAGE
+---------------------------------------------------------------
+1     4     2026-05-05 10:37:37  Redirect traffic around accident zone.
+2     10    2026-05-05 10:37:37  Fire suppression team ready for deployment.
+5     8     2026-05-05 10:37:37  Medical support requested at assembly point.
+11    3     2026-05-05 10:37:37  Caller details shared with nearest patrol unit.
